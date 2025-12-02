@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Maths Tools</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div id="drkCon">
+      <label for="drkM">DarkMode:</label> 
+      <input type="checkbox" id="drkM">
+    </div>
+    
+    <div class="page-container">
+        
+      <h1>Mini Maths Tools</h1>
+      
+      
+      
+     <div class="tool-cont">
+      
+      
+      
+      
+      <!--Part1 Calculator-->
+      
+      <button id="openCalc" class="toggles1" onClick="toggleCalc()">Calculator</button><span class="icons">🧮</span>
+      
+      
+      
+      <div id="calcOverlay" class="calc-overlay">
+        <div class="calc-box">
+            
+          <h2 id="hedr">Calculator<span id="prev">↺⏮</span></h2>
+          
+          <div id="calcOutput">
+              <span id="calcOut"></span>
+              <span id="rmvTx">⌫</span>
+          </div>
+          
+          <div class="calc-pad">
+            <button id="scnt" class="numPads" value=1>1</button> 
+            <button id="scnt2" class="numPads" value=2>2</button> 
+            <button class="numPads" value=3>3</button> 
+            <button class="numPads" value=4>4</button> 
+            <button class="numPads" value=5>5</button> 
+            <button class="numPads" value=6>6</button> 
+            <button class="numPads" value=7>7</button> 
+            <button class="numPads" value=8>8</button> 
+            <button class="numPads" value=9>9</button> 
+            <button class="operators" value = "-">-</button> 
+            <button class="multi" id="zer">0</button>
+            <button class="multi" id="pt">.</button> 
+            <button class="operators" value = "+">+</button> 
+            <button class="operators" value = "/">÷</button> 
+            <button class="operators" value = "*">×</button> 
+            <button id="solver" onClick="solution()">=</button> 
+            <button class="operators" value = "(">(</button> 
+            <button class="operators" value = ")">)</button> 
+            <button class="clearSheet" onClick="clearSheet()">C</button> 
+          </div>
+
+          <button id="closeCalc" class="toggles2" onClick="toggleCalc()">Close</button>
+         
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!--Part2 Triangle Area-->
+      
+      <button id="openTri" class="toggles1" onClick="toggleTri()">Triangle Area</button><span class="icons">📐</span>
+      
+      
+      
+      
+      <div id="triOverlay" class="tri-overlay">
+        <div class="tri-box">
+            
+          <h2>Triangle Area</h2>
+          
+          <div id="triOutput"></div>
+          
+          <div id="triSides">
+              <input id="sideA" class="sides" type="number" placeholder="enter side a">
+              <input id="sideB" class="sides" type="number" placeholder="enter side b">
+              <input id="sideC" class="sides" type="number" placeholder="enter side c">
+          </div>
+          <button id="clearTri" class="clearSheet" onClick="clearTri()">C</button>
+          <button id="findArea" onClick="findArea()">Calculate Area</button>
+          <button id="closeTri" class="toggles2" onClick="toggleTri()">Close</button>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!--Part3 Converter-->
+      
+  <button id="openConv" class="toggles1" onClick="toggleConv()">Converter</button><span class="icons">🔄</span>
+      
+  
+   <div id="convOverlay" class="conv-overlay">
+      
+      <div class="conv-box">
+          
+          <h2>Simple Converter</h2>
+          
+          <div id="tempr">
+              <h4>Temperature</h4>
+              <p onClick="findF()">Celsius</p>
+              <input id="cels" type="number" placeholder="enter °C" required>
+              <p onClick="findC()">Fahrenheit</p>
+              <input id="fahr" type="number" placeholder="enter °F" required>
+          </div>
+          
+          <div id="lengz">
+              <h4>Length</h4>
+              <p onClick="findInch()">Centimeter</p>
+              <input id="cmtr" type="number" placeholder="enter centimeter">
+              <p onClick="findCm()">Inch</p>
+              <input id="inch" type="number" placeholder="enter inches">
+          </div>
+          
+          <button class="toggles2" onClick="toggleConv()">Close</button>
+      </div>
+      
+  </div>
+      
+      
+     <div id="clock">
+         <span id="clockView"></span>
+         <span id="dateView"></span>
+     </div>
+      
+      
+      </div>
+      
+      
+      
+      
+      
+    </div>
+    
+    
+    
+    <script src="app.js"></script>
+  </body>
+</html>
