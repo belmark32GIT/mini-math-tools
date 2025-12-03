@@ -1,8 +1,4 @@
-     
-    @font-face {
-     font-family: 'Digital-7';
-     src: url('digital-7.ttf') format('truetype');
-     }
+
      
      body {
          background-color: purple;
@@ -259,11 +255,11 @@
             background-color: rgba(170,170,170,1);
             color: rgba(0,0,0,1);
             margin-right: 20px;
-            font-family: 'Digital-7', monospace;
+            font-family:  monospace;
         }
         #dateView {
             margin-left: 20px;
-            font-family: 'Digital-7', monospace;
+            font-family: monospace;
         }
         #prev {
             margin-left: 120px;
