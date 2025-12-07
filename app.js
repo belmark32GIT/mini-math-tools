@@ -350,7 +350,7 @@ function findCm() {
   let mn=String(time.getMonth()).padStart(2,'0');
   let yr=String(time.getFullYear()).slice(-2);
   let day= time.getDay();
-  let wkd=day===1 ? 'ሰኞ/Mn' : day===2 ? 'ማክ/Tu' : day===3 ? 'ረቡዕ/Wd' :  day===4 ? 'ሐሙስ/Th'  : day===5 ? 'ዓርብ/Fr' : day===6 ? 'ቅዳሜ/St' : day===7 ? 'እሁድ/Sn' : 'error';
+  let wkd=day===1 ? 'ሰኞ/Mn' : day===2 ? 'ማክ/Tu' : day===3 ? 'ረቡዕ/Wd' :  day===4 ? 'ሐሙስ/Th'  : day===5 ? 'ዓርብ/Fr' : day===6 ? 'ቅዳሜ/St' : day===0 ? 'እሁድ/Sn' : 'error';
   let period= hours>=12 ? "pm":"am";
   let h= hours % 12 || 12;
   
